@@ -13,7 +13,9 @@ RUN pip install --upgrade pycryptodomex==3.11.0 --no-cache-dir -r requirements.t
 
 COPY SunGather/ /
 COPY SunGather/exports/ /exports
+RUN true
 COPY run.sh /
+RUN true
 COPY config_generator.py /
 
 VOLUME /logs
